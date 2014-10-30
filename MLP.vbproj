@@ -8,13 +8,12 @@
     <SchemaVersion>
     </SchemaVersion>
     <ProjectGuid>{72402A4A-80E9-4D71-83C2-DC8EC8306560}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <StartupObject>
-    </StartupObject>
+    <OutputType>Exe</OutputType>
+    <StartupObject>MLP.Main</StartupObject>
     <RootNamespace>MLP</RootNamespace>
     <AssemblyName>MLP</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>Windows</MyType>
+    <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
@@ -103,6 +102,7 @@
     <Compile Include="Layers\OutputLayer.vb" />
     <Compile Include="Randoms\Predefined.vb" />
     <Compile Include="Randoms\Standard.vb" />
+    <Compile Include="Tests.vb" />
     <Compile Include="Utilities\Range.vb" />
     <Compile Include="Data\Training.vb" />
     <Compile Include="Neurons\Weight.vb" />
@@ -116,6 +116,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="LICENSE" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -125,8 +126,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
